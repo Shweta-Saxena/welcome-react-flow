@@ -8,9 +8,9 @@ import {
   Card, 
   CardContent,
   AppBar,
-  Toolbar
+  Toolbar,
+  Grid
 } from '@mui/material';
-import Grid from '@mui/material/Grid2';
 import { useNavigate } from 'react-router-dom';
 import { Dashboard, Security, Speed } from '@mui/icons-material';
 
@@ -64,7 +64,7 @@ const LandingPage = () => {
           </Box>
 
           <Grid container spacing={4} sx={{ mt: 6 }}>
-            <Grid xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Dashboard sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
@@ -77,7 +77,7 @@ const LandingPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Security sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
@@ -90,7 +90,7 @@ const LandingPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid xs={12} md={4}>
+            <Grid item xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Speed sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />

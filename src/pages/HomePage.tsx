@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   Box, 
@@ -9,7 +8,7 @@ import {
   Button, 
   Card, 
   CardContent,
-  Grid2 as Grid,
+  Grid,
   Avatar,
   Chip
 } from '@mui/material';
@@ -66,7 +65,7 @@ const HomePage = () => {
 
         <Grid container spacing={3}>
           {stats.map((stat, index) => (
-            <Grid xs={12} sm={6} md={3} key={index}>
+            <Grid item xs={12} sm={6} md={3} key={index}>
               <Card sx={{ height: '100%' }}>
                 <CardContent>
                   <Box display="flex" alignItems="center" justifyContent="space-between">
@@ -93,7 +92,7 @@ const HomePage = () => {
         </Grid>
 
         <Grid container spacing={3} sx={{ mt: 3 }}>
-          <Grid xs={12} md={8}>
+          <Grid item xs={12} md={8}>
             <Card>
               <CardContent>
                 <Typography variant="h6" component="h2" gutterBottom>
@@ -117,7 +116,7 @@ const HomePage = () => {
             </Card>
           </Grid>
 
-          <Grid xs={12} md={4}>
+          <Grid item xs={12} md={4}>
             <Card>
               <CardContent>
                 <Typography variant="h6" component="h2" gutterBottom>

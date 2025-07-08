@@ -7,7 +7,7 @@ import {
   Button, 
   Card, 
   CardContent,
-  Grid,
+  Grid2 as Grid,
   AppBar,
   Toolbar
 } from '@mui/material';
@@ -64,7 +64,7 @@ const LandingPage = () => {
           </Box>
 
           <Grid container spacing={4} sx={{ mt: 6 }}>
-            <Grid item xs={12} md={4}>
+            <Grid xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Dashboard sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
@@ -77,7 +77,7 @@ const LandingPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Security sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
@@ -90,7 +90,7 @@ const LandingPage = () => {
                 </CardContent>
               </Card>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid xs={12} md={4}>
               <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
                 <CardContent>
                   <Speed sx={{ fontSize: 48, color: 'primary.main', mb: 2 }} />
